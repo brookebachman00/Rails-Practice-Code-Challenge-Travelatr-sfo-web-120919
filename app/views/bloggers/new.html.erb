@@ -1,0 +1,12 @@
+<h1>Create a Blogger</h1>
+
+
+<%= form_for @blogger do |f| %>
+    <label> Enter Blogger Name </label>
+    <%= f.text_field :name %>
+    <label> Enter Blogger Age </label>
+    <%= f.number_field :age %>
+    <label> Enter Blogger Bio </label>
+    <%= f.text_area :bio %>
+    <%= f.submit "Submit Your Blogger" %>
+    <% end %>
